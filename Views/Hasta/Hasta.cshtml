@@ -1,0 +1,87 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<head>  
+       <style>
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers tr:hover {background-color: #ddd;}
+
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #04AA6D;
+          color: white;
+        }
+        </style>
+        </head>
+        <body>
+        @*<form method="post" action="..\Ogrenci\OgrKaydetSon">*@
+        <table class="table table-striped">
+            <tr>
+                <td>Hasta Ad Soyad </td>
+                <td>:</td>
+                <td><input class="form-text text-muted" type="text" name="HastaAdSoyad" /></td>
+            </tr>
+            <tr>
+                <td>Tc Kimlik No </td>
+                <td>:</td>
+                <td><input type="text" name="HastaTC" /></td>
+            </tr>
+            <tr>
+                <td>Cinsiyet </td>
+                <td>:</td>
+                <td><input type="text" name="HastaCinsiyet" /></td>
+            </tr>
+            <tr>
+                <td>Hasta Yaşı </td>
+                <td>:</td>
+                <td><input type="text" name="HastaYas" /></td>
+            </tr>
+            <tr>
+                <td>Randevu Tarih </td>
+                <td>:</td>
+                <td><input type="date" name="RandevuTarih" /></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Kaydet" />
+                </td>
+            </tr>
+        </table>
+
+
+
+        @* </form>*@
+        <h1>Kayıtlı Hastalar</h1>
+
+        <table id="customers">
+          <tr>
+            <th>Hasta Ad Soyad</th>
+            <th>Poliklinik</th>
+            <th>Doktor</th>
+            <th>Randevu Tarih</th>
+
+          </tr>
+          <tr>
+            <td>Paris spécialités</td>
+            <td>Marie Bertrand</td>
+            <td>France</td>
+          </tr>
+        </table>
+
+        </body>
